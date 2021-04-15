@@ -1,0 +1,339 @@
+:root {
+  --light-green: #a3d465;
+  --medium-green: #4f9435;
+  --dark-green: #305e1d;
+  --darker-green: #1c3710;
+  --pink: #d6302d;
+  --simply-white: #ffffff;
+  --purple: #40225e;
+  --primary-button-shadow: -1px 2px 8px 0px rgba(108, 59, 68, 0.8);
+  --secundary-button-shadow: -1px 2px 8px 0px rgba(48, 94, 29, 0.8);
+  --card-shadow: -4px 4px 8px 0px rgba(53, 81, 42, 0.8);
+  --padding-top-main-title: 42px;
+  --pading-bottom-main-title: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--light-green);
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 292px;
+  min-width: 320px;
+  margin-bottom: 100px;
+  background-image: url(./Resources/Veggie-Background.svg);
+}
+
+header .logo {
+  position: absolute;
+  top: 30px;
+  left: 5%;
+  width: 87px;
+  height: auto;
+}
+
+.header-buttons {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  position: absolute;
+  top: 94%;
+}
+
+.header-button-1 {
+  width: 155px;
+  margin-top: 16px;
+  padding: 14px 16px;
+  background: #d6302d;
+  border-radius: 35px;
+  border: none;
+  box-shadow: var(--primary-button-shadow);
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 14px;
+  color: var(--simply-white);
+}
+
+.header-button-2 {
+  width: 155px;
+  margin-top: 16px;
+  padding: 13px 16px;
+  background: var(--light-green);
+  border-radius: 35px;
+  border: 1.2px solid var(--dark-green);
+  box-shadow: var(--secundary-button-shadow);
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 400;
+  line-height: 14px;
+  color: var(--dark-green);
+}
+
+.background-img {
+  height: 170px;
+  width: 250px;
+  margin: 0 auto;
+  background-image: url(./Resources/Background-Img.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+.why-qumara {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: var(--padding-top-main-title);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 34px;
+  color: var(--simply-white);
+}
+
+.why-qumara-body {
+  width: 100%;
+  height: auto;
+  padding: 0px 10px;
+  margin: 0 auto;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 18px;
+  text-align: center;
+  color: var(--dark-green);
+}
+
+.why-qumara-body p {
+  padding-top: 16px;
+}
+
+.plan-suscription {
+  width: 100%;
+  height: auto;
+}
+
+.plan-suscription-title {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: var(--padding-top-main-title);
+  padding-bottom: var(--pading-bottom-main-title);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 34px;
+  color: var(--simply-white);
+}
+
+.plan-suscription-body {
+  width: 100%;
+  height: auto;
+  position: relative;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 18px;
+  text-align: center;
+  color: var(--dark-green);
+}
+
+.plan-suscription-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+.plan-suscription-card {
+  border-radius: 16px;
+  text-align: center;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  width: 271px;
+  height: 417px;
+  background-repeat: no-repeat;
+  box-shadow: var(--card-shadow);
+  margin: 16px 32px 48px;
+}
+
+.card-1 {
+  background-image: url(./Resources/CardBackground1.png);
+}
+
+.card-2 {
+  background-image: url(./Resources/CardBackground2.png);
+}
+
+.card-3 {
+  background-image: url(./Resources/CardBackground3.png);
+}
+
+.plan-suscription-card h1 {
+  width: 100%;
+  height: auto;
+  padding-top: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 32px;
+  color: var(--dark-green);
+}
+
+.plan-suscription-card .card-price {
+  width: 100%;
+  height: auto;
+  padding-top: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4.8rem;
+  line-height: 64px;
+  color: var(--purple);
+}
+
+.plan-suscription-card p {
+  width: 100%;
+  height: 100px;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.plan-suscription-card ul {
+  width: 100%;
+  height: 80px;
+  padding: 0px 5px;
+  margin-bottom: 40px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+  text-align: center;
+  color: var(--simply-white);
+  list-style-type: none;
+}
+
+.plan-suscription-card a {
+  padding: 16px 30px;
+  background-color: var(--pink);
+  border-radius: 35px;
+  box-shadow: var(--primary-button-shadow);
+  border: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 14px;
+  color: var(--simply-white);
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer-container {
+  width: 100%;
+  min-width: 320px;
+  background-color: var(--medium-green);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0px;
+  margin-top: 100px;
+}
+
+.footer-logo {
+  margin-left: 10px;
+  width: 32px;
+  height: auto;
+}
+
+.footer-items {
+  width: 126px;
+  height: auto;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 3rem;
+  text-align: left;
+  color: var(--simply-white);
+}
+
+.footer-items li {
+  list-style-type: none;
+}
+
+.social-media-container {
+  width: 10%;
+  height: 100px;
+  padding-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.facebook {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  background-image: url(./Resources/facebook.svg);
+  background-repeat: no-repeat;
+}
+
+.instagram {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  background-image: url(./Resources/instagram.svg);
+  background-repeat: no-repeat;
+}
+
+.twitter {
+  width: 20px;
+  height: 20px;
+    margin-right: 8px;
+  background-image: url(./Resources/twitter.svg);
+  background-repeat: no-repeat;
+}
+
+.button-state:hover {
+  background-color: #f13a37;
+  transition: width linear;
+
+.button-state:active {
+  background-color: #da1c19;
+  transition: 3s;
+}
